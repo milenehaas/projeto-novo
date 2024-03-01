@@ -1,12 +1,12 @@
 :root{
 
 
-    --cor-de-fundo: #1E1E1E;
+    --cor-de-fundo: #344569;
     --verde: #6FFF57;
     --branco: #FFFFFF;
     --botao-ativo: #3A375E;
     --botao-inativo: rgba(58, 55, 94, 0.5);
---texto-fundo: rgba(58, 55, 94, 0.3);
+--texto-fundo: rgba(32, 25, 100, 0.3);
 }
 .conteudo-principal {
     display: flex;
@@ -25,6 +25,11 @@
     color: var(--verde);
   
 }
+ 
+.titulo-principal {
+    color: var(--verde);
+}
+
 .botao{
     font-family: "Crakra Petch", sans-serif;
     background-color: var(--botao-inativo);
@@ -41,9 +46,7 @@
     border-top: none;
 }
 
-.botoes {
-    display: block;
-}
+
 
 @media screen and (min-width: 768px) {
     .botoes {
@@ -55,19 +58,29 @@
     border-radius: 40px 40px 0 0;
 }
 
+.botoes-last-chield {
+    border-radius: 0 40px 0 0;
+}
+
 
 .botoes {
     display: block;
 }
 
-@media screen and (min-width: 768px) {
+.ativo{
+    background-color: var(--botao-ativo);
+    border-bottom: 4 px solid var(--verde);
+}
+
+@media screen and (min-width: 768px) {}
     .botoes {
         display: flex;
     }
-    .ativo{
-        background-color: var(--botao-ativo);
-        border-bottom: 4px solid var(--verde);
-        }
+
+ 
+
+    
+
 
         
 
